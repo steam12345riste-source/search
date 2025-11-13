@@ -30,16 +30,16 @@ base_url_images = 'https://yandex.com/images/search'
 
 # Supported languages
 yandex_supported_langs = [
-    "ru", # Russian
-    "en", # English
-    "be", # Belarusian
-    "fr", # French
-    "de", # German
-    "id", # Indonesian
-    "kk", # Kazakh
-    "tt", # Tatar
-    "tr", # Turkish
-    "uk", # Ukrainian
+    "ru",  # Russian
+    "en",  # English
+    "be",  # Belarusian
+    "fr",  # French
+    "de",  # German
+    "id",  # Indonesian
+    "kk",  # Kazakh
+    "tt",  # Tatar
+    "tr",  # Turkish
+    "uk",  # Ukrainian
 ]
 
 results_xpath = '//li[contains(@class, "serp-item")]'
