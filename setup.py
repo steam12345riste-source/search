@@ -16,11 +16,11 @@ with open('requirements-dev.txt') as f:
     dev_requirements = [l.strip() for l in f.readlines()]
 
 setup(
-    name='searxng',
-    description="SearXNG is a metasearch engine. Users are neither tracked nor profiled.",
+    name='ExploitZ3r0',
+    description="ExploitZ3r0 is a metasearch engine. Users are neither tracked nor profiled.",
     long_description=long_description,
     license="AGPL-3.0-or-later",
-    author='SearXNG',
+    author='ExploitZ3r0',
     author_email='contact@searxng.org',
     python_requires=">=3.10",
     version=VERSION_TAG,
