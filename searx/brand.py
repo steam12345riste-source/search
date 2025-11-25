@@ -24,11 +24,7 @@ class SettingsBrand(msgspec.Struct, kw_only=True, forbid_unknown_fields=True):
     .. code:: yaml
 
        brand:
-         issue_url: https://github.com/searxng/searxng/issues
-         docs_url: https://docs.searxng.org
-         public_instances: https://searx.space
-         wiki_url: https://github.com/searxng/searxng/wiki
-
+              https://v11.base44.app/
          custom:
            links:
              Uptime: https://uptime.searxng.org/history/example-org
@@ -38,13 +34,13 @@ class SettingsBrand(msgspec.Struct, kw_only=True, forbid_unknown_fields=True):
     issue_url: str = "https://github.com/searxng/searxng/issues"
     """If you host your own issue tracker change this URL."""
 
-    docs_url: str = "https://docs.searxng.org"
+    docs_url: str = ""
     """If you host your own documentation change this URL."""
 
-    public_instances: str = "https://searx.space"
+    public_instances: str = ""
     """If you host your own https://searx.space change this URL."""
 
-    wiki_url: str = "https://github.com/searxng/searxng/wiki"
+    wiki_url: str = ""
     """Link to your wiki (or ``false``)"""
 
     custom: BrandCustom = msgspec.field(default_factory=BrandCustom)
@@ -58,7 +54,7 @@ class SettingsBrand(msgspec.Struct, kw_only=True, forbid_unknown_fields=True):
     # long as we don't have a more general solution, we should support it in the
     # given function, but it should not be expanded further.
 
-    new_issue_url: str = "https://github.com/searxng/searxng/issues/new"
+    new_issue_url: str = ""
     """If you host your own issue tracker not on GitHub, then unset this URL.
 
     Note: This URL will create a pre-filled GitHub bug report form for an
